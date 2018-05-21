@@ -18,8 +18,7 @@
             <el-menu-item index="6-2"><router-link to="/">退出登录</router-link></el-menu-item>
         </el-submenu> -->
         <el-dropdown class="right">
-          <span class="el-dropdown-link">
-            我的信息<i class="el-icon-arrow-down el-icon--right"></i>
+          <span class="el-dropdown-link">我的信息<i class="el-icon-arrow-down el-icon--right"></i>
           </span>
           <el-dropdown-menu slot="dropdown">
             <el-dropdown-item>修改密码</el-dropdown-item>
@@ -51,5 +50,19 @@
     height: 100%;
     display: block;
     padding: 0 20px;
+  }
+  .el-dropdown{
+    height: 60px;
+  }
+  .el-dropdown-link{
+    height: 100%;
+    line-height: 60px;
+    display: block;
+    padding: 0 20px;
+    color: white;
+    cursor: pointer;
+  }
+  .el-dropdown:hover{
+    background-color: rgb(67, 74, 80);
   }
 </style>
