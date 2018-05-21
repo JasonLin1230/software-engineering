@@ -1,17 +1,19 @@
 <template>
   <div id="app">
-    <head-nav></head-nav>
+    <my-nav></my-nav>
     <router-view></router-view>
-    <p id="copy">版权所有 © JasonLin. 2018</p>
+    <my-footer></my-footer>
   </div>
 </template>
 
 <script>
-import Nav from './components/Nav.vue'
+import Nav from './components/common/Nav.vue'
+import Footer from './components/common/Footer.vue'
 export default {
   name: 'App',
   components: {
-      'head-nav': Nav
+      'my-nav': Nav,
+      'my-footer': Footer
     }
 }
 </script>
@@ -38,11 +40,5 @@ a{
 .main_title{
   width: 100%;
   display: block;
-}
-#copy{
-  width:100%;
-  text-align: center;
-  position: absolute;
-  bottom: 0;
 }
 </style>

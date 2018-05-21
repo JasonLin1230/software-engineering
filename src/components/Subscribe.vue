@@ -1,5 +1,7 @@
 <template>
-  <p>预约记录</p>
+  <el-main>
+      <p>预约历史</p>
+  </el-main>
 </template>
 
 <script>
