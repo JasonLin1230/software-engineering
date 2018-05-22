@@ -24,11 +24,11 @@
 </template>
 
 <script>
-import Table from './common/Table.vue'
+import SearchRes from './common/SearchRes.vue'
   export default {
     name: "Search",
     components:{
-      'my-table': Table
+      'my-table': SearchRes
     },
     data() {
       return {

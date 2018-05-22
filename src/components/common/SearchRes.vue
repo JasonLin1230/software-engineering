@@ -33,7 +33,7 @@
         </el-table-column>
         <el-table-column
           prop="zip"
-          label="操作日期"
+          label="可借复本"
           width="145">
         </el-table-column>
         <el-table-column
@@ -41,7 +41,7 @@
           label="操作"
           width="80">
           <template slot-scope="scope">
-            <el-button @click="handleClick(scope.row)" type="text" size="small">删除</el-button>
+            <el-button @click="handleClick(scope.row)" type="text" size="small">查看</el-button>
           </template>
         </el-table-column>
       </el-table>
@@ -60,7 +60,7 @@
 
 <script>
     export default {
-        name: "Table",
+        name: "SearchRes",
         data() {
             return {
                 tableData: [{
