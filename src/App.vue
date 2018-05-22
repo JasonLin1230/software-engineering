@@ -12,9 +12,9 @@ import Footer from './components/common/Footer.vue'
 export default {
   name: 'App',
   components: {
-      'my-nav': Nav,
-      'my-footer': Footer
-    }
+    'my-nav': Nav,
+    'my-footer': Footer
+  }
 }
 </script>
 

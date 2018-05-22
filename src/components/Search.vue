@@ -1,6 +1,6 @@
 <template>
   <el-main>
-    <h2 class="main_title">馆藏检索</h2>
+    <h3 class="main_title">馆藏检索</h3>
     <el-form :inline="true" :model="formInline" class="">
       <el-form-item label="馆藏检索">
         <el-input v-model="formInline.search" placeholder="请输入检索词"></el-input>
@@ -17,12 +17,19 @@
         <el-button type="primary" icon="el-icon-search" @click="onSubmit">检索</el-button>
       </el-form-item>
     </el-form>
+    <div class="results">
+      <my-table></my-table>
+    </div>
   </el-main>
 </template>
 
 <script>
+import Table from './common/Table.vue'
   export default {
     name: "Search",
+    components:{
+      'my-table': Table
+    },
     data() {
       return {
         formInline: {
